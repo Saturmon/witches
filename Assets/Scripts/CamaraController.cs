@@ -11,8 +11,9 @@ public class CamaraController : MonoBehaviour
     {
         if (player != null)
         {
-            Vector2 newCamPosition = new Vector2(player.transform.position.x, 0);
-            transform.position = new Vector3(newCamPosition.x, transform.position.y, transform.position.z);
+            Vector2 newCamPositionX = new Vector2(player.transform.position.x, 0);
+            Vector2 newCamPositionY = new Vector2(0, player.transform.position.y);
+            transform.position = new Vector3(newCamPositionX.x, newCamPositionY.y, transform.position.z);
         }
     }
 }
