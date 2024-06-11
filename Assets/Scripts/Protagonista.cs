@@ -35,6 +35,27 @@ public class Protagonista : Personaje
         {
             _animator.SetBool("IsWalkingDown", false);
         }
+        if (Input.GetKey("a"))
+        {
+            Debug.Log("Tecla 'a' presionada");
+            _animator.SetBool("IsWalkingHacia los lados", true);
+            _spriteRenderer.flipX = false;
+        }
+        else if (Input.GetKey("a") == false)
+        {
+            Debug.Log("Tecla 'a' no presionada");
+            _animator.SetBool("IsWalkingHacia los lados", false);
+        }
+        if (Input.GetKey("d"))
+        {
+            _animator.SetBool("IsWalkingHacia los lados", true);
+            _spriteRenderer.flipX = true; 
+        }
+        else if (Input.GetKey("d") == false)
+        {
+            _animator.SetBool("IsWalkingHacia los lados", false);
+            _spriteRenderer.flipX = false;
+        }
     }
     private void FixedUpdate()
     {

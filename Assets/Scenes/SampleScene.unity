@@ -185,7 +185,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 18.891968
+  orthographic size: 24.060402
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -225,9 +225,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f13f0f02afbdaaf4b95afaf67bf7a7c7, type: 3}
+  m_Script: {fileID: 11500000, guid: 34dd0beb78b00db4caf3a084ef8e8e39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1148314969}
 --- !u!1 &1148314968
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,7 +244,7 @@ GameObject:
   - component: {fileID: 1148314972}
   - component: {fileID: 1148314974}
   m_Layer: 0
-  m_Name: personaje caminata ilde
+  m_Name: Jugador
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -332,7 +333,7 @@ Transform:
   m_GameObject: {fileID: 1148314968}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.4916, y: -3.2592, z: 0}
+  m_LocalPosition: {x: -9, y: -0.4, z: 0}
   m_LocalScale: {x: 1.4302, y: 1.4302, z: 1.4302}
   m_ConstrainProportionsScale: 0
   m_Children: []
